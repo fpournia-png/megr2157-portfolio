@@ -6,9 +6,10 @@ The objective of this assignment is to determine the dimensions for a bracket by
 
 
 ## Analyze
+# Knowns 
 <img width="2044" height="1552" alt="image" src="https://github.com/user-attachments/assets/f0ef378e-7073-4a04-a564-7b360a9471fe" />
 
-Assumptions:
+# Assumptions:
 -Bracket design in symmetrical about the centerline 
 -Applied strap force is distributed symmetrically 
 -Safety factor of 4 is used throughout entire design 
@@ -17,9 +18,9 @@ Assumptions:
 -Beam theory is used to establish feature dimensions
 -Direct shear failure is neglected 
 -Shear deflection is neglected 
--Loads are assumed to act at the locations shown in the concept design \
+-Loads are assumed to act at the locations shown in the concept design 
 
-Features: 
+# Features: 
  <img width="382" height="345" alt="image" src="https://github.com/user-attachments/assets/1bfa78e5-10ec-48e4-8410-d5abd8e63c25" />
 
 
