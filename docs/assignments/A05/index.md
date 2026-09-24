@@ -24,6 +24,7 @@ The objective of this assignment is to determine the dimensions for a bracket by
  <img width="382" height="345" alt="image" src="https://github.com/user-attachments/assets/1bfa78e5-10ec-48e4-8410-d5abd8e63c25" />
 
 
+
 ## Decide
 
 
