@@ -71,5 +71,5 @@ Safety Factor
 * I spent 5 hours on this project.
 
 ### Finalized CAD File 
-[CAD File]
 
+[(CAD File)]
