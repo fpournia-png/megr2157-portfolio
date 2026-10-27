@@ -1,7 +1,7 @@
 # A7 – [Topic]
 
 ## Objective
-
+In this assignment I will use FEA in Solidworks to improve my bracket design from a previous assignment. Throughout this process I will use the analysis in CAD to optimize my bracket so that it is lightweight but also meets all the design criteria. I will go through different iterations of the bracket in order to find the most appropriate  design choice for the constraints given. At the end of this assignment I will reflect on lesson key engineering lessons learned that I can use in the future.
 
 ## Analyze
 Inner Loop:
