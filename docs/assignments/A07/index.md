@@ -63,7 +63,7 @@ Max Deflection
 <img width="1846" height="994" alt="image" src="https://github.com/user-attachments/assets/eb693bb6-c874-40d2-bce6-808703b07638" />
 Safety Factor  
 <img width="1782" height="898" alt="image" src="https://github.com/user-attachments/assets/402481b9-716a-40d7-b4b8-fa44a7a35ad4" />
-* This design iteration slightly increased the max stress and increased the max deformation by a noticeable amount. Even though it seemed to have had a negative effect on the numbers it still stayed within the safety factor while also cutting down the wait almost a full pound from the original starting weight. 
++ This design iteration slightly increased the max stress and increased the max deformation by a noticeable amount. Even though it seemed to have had a negative effect on the numbers it still stayed within the safety factor while also cutting down the wait almost a full pound from the original starting weight. 
 <img width="2516" height="1060" alt="image" src="https://github.com/user-attachments/assets/df2ce528-6212-431f-b03a-3ec0399f456b" />
 
 ## Communicate
