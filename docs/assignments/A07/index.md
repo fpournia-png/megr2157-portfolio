@@ -12,21 +12,21 @@ Max Stress
 Max Deflection 
 <img width="1806" height="1034" alt="image" src="https://github.com/user-attachments/assets/7616b51c-bb3d-4eae-829c-0b3dc9bdba30" />
 
-+Medium Mesh 
-+Max Stress 
+### Medium Mesh 
+Max Stress 
 <img width="1834" height="978" alt="image" src="https://github.com/user-attachments/assets/a5b488d9-322d-430d-b23f-ee2ba384aa21" />
-+Max Deflection 
+Max Deflection 
 <img width="1802" height="932" alt="image" src="https://github.com/user-attachments/assets/56fc650c-2586-4a1c-bd85-97a2892b3e95" />
 
-+Coarse Mesh 
-+Max Stress 
+### Coarse Mesh 
+Max Stress 
 <img width="1936" height="982" alt="image" src="https://github.com/user-attachments/assets/5fe3201e-7785-414d-880d-be5f4b3fc128" />
-+Max Deflection 
+Max Deflection 
 <img width="1862" height="924" alt="image" src="https://github.com/user-attachments/assets/911cc300-b5f4-43b0-87ec-664e4338fc62" />
 
 <img width="2500" height="1072" alt="image" src="https://github.com/user-attachments/assets/ea585dd1-942e-4b60-bb44-ed0ac9c37125" />
 
-+The results from the the three rounds of inner loop iterations converge within %7, as a result outer loop iterations were started. 
+* The results from the the three rounds of inner loop iterations converge within %7, as a result outer loop iterations were started. 
  
 
 ## Decide
