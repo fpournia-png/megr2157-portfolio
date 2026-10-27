@@ -72,5 +72,4 @@ Safety Factor
 
 ### Finalized CAD File 
 
-[CAD File]
-(https://github.com/fpournia-png/megr2157-portfolio/blob/main/docs/A7_Bracket.SLDPRT)
+[https://github.com/fpournia-png/megr2157-portfolio/blob/main/docs/A7_Bracket.SLDPRT]
