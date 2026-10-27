@@ -71,5 +71,5 @@ Safety Factor
 * I spent 5 hours on this project.
 
 ### Finalized CAD File 
-[https://github.com/fpournia-png/megr2157-portfolio/blob/main/docs/A7_Bracket.SLDPRT]
+[CAD File]
 
