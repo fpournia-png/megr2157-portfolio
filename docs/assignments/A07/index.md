@@ -69,3 +69,7 @@ Safety Factor
 ## Communicate
 * Through this assignment I learned how different mesh sizes can effect the accuracy of a simulation. I also learned the pros and cons to having ether a more coarse or a more fine mesh, such as simulation time versus accuracy. I also learned how to use simulation results to further guide my design process and iterations. By using the different scenes, stress, deflection, and safety factor I was able to pin point what parts of my component could be taken out in order to make my component lighter but maintain it's structural integrity. 
 * I spent 5 hours on this project.
+
+### Finalized CAD File 
+
+
