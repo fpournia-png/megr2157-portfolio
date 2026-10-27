@@ -6,7 +6,7 @@
 ## Analyze
 Inner Loop:
 
-* Fine Mesh
+### Fine Mesh
 Max Stress 
 <img width="1864" height="1116" alt="image" src="https://github.com/user-attachments/assets/b694b02a-9d97-4387-8bd3-c9034fb988d2" />
 Max Deflection 
