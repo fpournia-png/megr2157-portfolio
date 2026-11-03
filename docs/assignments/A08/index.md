@@ -35,7 +35,7 @@ To calculate the minimum thickness necessary for the bearing I used the stress e
 * The McMaster Carr journal bearing component for the input shaft is, and 2867T41 for the input shaft. 
 <img width="1472" height="1876" alt="image" src="https://github.com/user-attachments/assets/a58da7e7-a41b-43da-a5e3-a5da36d36e44" />
 
-* CAD Model:(A8_GearAssembly(1).zip) 
+* CAD Model: (A8_GearAssembly(1).zip) 
 <img width="1346" height="898" alt="image" src="https://github.com/user-attachments/assets/190d156e-18af-4fdf-8f33-4912e5f98baa" />
 <img width="1310" height="1014" alt="image" src="https://github.com/user-attachments/assets/a3410c1f-f3ec-4b93-ab33-cc4f53071f7d" />
 <img width="996" height="960" alt="image" src="https://github.com/user-attachments/assets/57d866fc-da4e-41ec-b7fa-0b7848471c86" />
