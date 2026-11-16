@@ -17,8 +17,7 @@
  https://www.mcmaster.com/93410A608/ 
 
 ## Decide
-_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
-### Cost 
+### Cost- Farima Pournia 
 | Item Number | Quantity | Name | Cost/Item | Cost | Purchase Link | 
 |----------|-------|-------|------|-------|--------|
 | 1 | 2 | Alloy Steel Acme Lead Screw | $75.50 | $151 | https://www.mcmaster.com/93410A608/ | 
@@ -26,5 +25,4 @@ _Reference your concept selection (Pugh matrix) here. How does this design follo
 | 3 | 2 | Precision Acme Flange | $37.06 | $74.12 | https://www.mcmaster.com/95082A641/ | 
 
 ## Communicate
-### Lessons Learned 
 
