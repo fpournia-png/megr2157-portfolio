@@ -23,6 +23,7 @@ _Reference your concept selection (Pugh matrix) here. How does this design follo
 |----------|-------|-------|------|-------|--------|
 | 1 | 2 | Alloy Steel Acme Lead Screw | $75.50 | $151 | https://www.mcmaster.com/93410A608/ | 
 | 2 | 2 | Precision Acme Externally Threaded Nut | $29.91 | $59.82 | https://www.mcmaster.com/95072A127/ |
+| 3 | 2 | Precision Acme Flange | $37.06 | $74.12 | https://www.mcmaster.com/95082A641/ | 
 
 ## Communicate
 ### Lessons Learned 
