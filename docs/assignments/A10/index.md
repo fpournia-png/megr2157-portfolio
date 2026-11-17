@@ -10,7 +10,7 @@
 ### Rotational Speed- Farima Pournia 
 * The rotational speed of the lead screw was then calculated through the speed range given and the screw lead that was found through the diameter that was calculated. Using the equation for linear speed rotational speed was solved for. This equation was then used to plug in the lower and upper bounds of the linear speed range and a range for rotational speed was calculated.
  <img width="1848" height="784" alt="image" src="https://github.com/user-attachments/assets/09b3b669-2147-4408-8a6a-6c2f6bd9368c" />
-### Torque- Farima Pournia
+### Torque Farima Pournia
 * The next parameter that was calculated was torque by using the equation for a square threaded lead screw. The diameter of the actual screw selected was used and not the diameter that was calculated. The screw lead was found through the diameter of the screw selected and the coefficient of friction was found in the Machinery Handbook under the value for friction of steel against bronze. These values were plugged into the torque equation and solved.
   <img width="2084" height="1036" alt="image" src="https://github.com/user-attachments/assets/df96592f-498d-469c-ab97-d1d0d48b285d" />
 * From calculating these parameters a lead screw was chosen from McMaster Carr. The closest diameter of lead screw that fit the diameter that was solved for was 5.97 mm, so a 3/8-10 steel acme lead screw was selected. For this assignment our lead screw is required to be at least 18 inches. The lead screw sizing selected only had 3 feet, 6 feet or 12 inches. So to accommodate for this we selected the 3 foot long lead screw and would cut it down closer to size. The lead screw we selected is linked below.
