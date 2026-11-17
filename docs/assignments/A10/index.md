@@ -56,6 +56,7 @@ The same simply supported beam configuration and centered load were used for the
 analysis. The maximum deflection occurs at the center of the beam, where the tensile load is
 applied. 
 <img width="1006" height="886" alt="image" src="https://github.com/user-attachments/assets/9389bb90-6478-4d0c-82a7-cc2de17344da" />
+
 * For a simply supported beam with a concentrated load at the center, the maximum deflection is:
 δmax = FL³/(48EI) The area moment of inertia for a rectangular cross-section is: I =
 bh³/12Substituting the moment of inertia equation into the deflection equation: δmax =
@@ -66,7 +67,7 @@ deflection to the maximum allowable deflection: 0.0221 mm < 0.1 mm The calculate
 deflection of 0.0221 mm is below the allowable deflection of 0.1 mm. Therefore, the selected
 crosshead dimensions satisfy the preliminary stiffness requirement.
 #### Crosshead Material and Dimension Selection
-A36 structural steel was selected for the crosshead because of its strength, stiffness, availability,
+* A36 structural steel was selected for the crosshead because of its strength, stiffness, availability,
 and ease of manufacturing. A rectangular cross-section was selected with a width of 50 mm and
 a height of 40 mm. The strength analysis resulted in a maximum bending stress of 11.43 MPa
 and an actual factor of safety of 21.71, exceeding the required factor of safety of 4. The
@@ -75,7 +76,8 @@ allowable deflection of 0.1 mm. Based on these calculations, the selected 50 mm 
 steel cross-section satisfies the preliminary beam strength and deflection requirements.
 <img width="612" height="586" alt="image" src="https://github.com/user-attachments/assets/c311f55e-0c33-4ce8-963d-1a312895e0f7" />
 <img width="636" height="534" alt="image" src="https://github.com/user-attachments/assets/82b35e70-fdf5-43cf-acdd-c8b4fa5a2717" />
-<img width="846" height="404" alt="image" src="https://github.com/user-attachments/assets/b6ea0c67-3685-4bd7-824f-c0c53af2f58d" />
+<img width="846" height="404" alt="image" src="https://github.com/user-attachments/assets/b6ea0c67-3685-4bd7-824f-c0c53af2f58d" /> 
+
 * A multiview engineering sketch was created to communicate the overall geometry, dimensions,
 and mounting features of the tensile tester crosshead. The drawing includes top, front, and side
 views to show the crosshead dimensions and the locations of the two leadscrew mounting
@@ -87,6 +89,7 @@ nut and flange assembly. The counterbore depth is 0.625 inches. The crosshead ha
 mounting features while maintaining the rectangular cross-section used in the beam strength
 and deflection analyses.
 <img width="1226" height="732" alt="image" src="https://github.com/user-attachments/assets/4a24e3fc-f651-49af-a04a-8eb59ea473d9" />
+
 * During the crosshead design process, I learned how to apply beam bending stress and
 deflection equations to determine the dimensions required for a mechanical structure. I learned
 that material selection requires considering both yield strength and elastic modulus because
@@ -102,7 +105,8 @@ deflection limits. I spent around 3 hours on my portion of the assignment.
 <img width="956" height="1108" alt="image" src="https://github.com/user-attachments/assets/2f3364d3-4e1c-49e3-a103-73588480ae38" />
 <img width="1014" height="1096" alt="image" src="https://github.com/user-attachments/assets/ae5758e1-c7d2-4f11-b2e5-22d34573c9a8" />
 <img width="896" height="938" alt="image" src="https://github.com/user-attachments/assets/2e0ea95f-58c5-4c8b-a1c9-3381ca5bd327" />
-<img width="1070" height="1100" alt="image" src="https://github.com/user-attachments/assets/191b0500-d6db-4bf9-8fba-0bac3a866838" />
+<img width="1070" height="1100" alt="image" src="https://github.com/user-attachments/assets/191b0500-d6db-4bf9-8fba-0bac3a866838" /> 
+
 ### Nut and Flange- AC
 <img width="1024" height="912" alt="image" src="https://github.com/user-attachments/assets/d79811b9-dad5-4a10-a58f-0511c997b9b6" />
 <img width="1192" height="690" alt="image" src="https://github.com/user-attachments/assets/b38a947c-66c3-4770-87be-a1ef01384469" />
