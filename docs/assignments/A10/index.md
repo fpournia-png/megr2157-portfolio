@@ -114,7 +114,7 @@ deflection limits. I spent around 3 hours on my portion of the assignment.
 <img width="1250" height="938" alt="image" src="https://github.com/user-attachments/assets/0aa7668c-0fd6-4cf7-a88b-22008ba2ceed" /> 
 
 ### CAD File Link 
-* (https://github.com/fpournia-png/megr2157-portfolio/blob/main/docs/assignments/A10/A10_Tensile_Machine.zip) 
+* [CAD File Link] (https://github.com/fpournia-png/megr2157-portfolio/blob/main/docs/assignments/A10/A10_Tensile_Machine.zip) 
 ### Cost- Farima Pournia 
 | Item Number | Quantity | Name | Cost/Item | Cost | Purchase Link | 
 |----------|-------|-------|------|-------|--------|
