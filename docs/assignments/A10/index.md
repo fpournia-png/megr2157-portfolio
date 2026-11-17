@@ -32,6 +32,7 @@ two support reactions represent the forces from the left and right bronze nut an
 assemblies. Because the loading is symmetrical, both support reactions are equal.
 <img width="624" height="876" alt="image" src="https://github.com/user-attachments/assets/17f5eb9c-1eee-4f7f-a3e6-784a77955162" />
 <img width="736" height="652" alt="image" src="https://github.com/user-attachments/assets/d0f0906a-95df-4c52-ba5c-14d30d6f3855" />
+
 * Using static equilibrium, the support reactions can be determined by summing the vertical forces. Sum of
 forces in the vertical direction: ΣFy = 0, RA + RB - F = 0 Due to symmetrical loading: RA = RB
 Therefore: RA = RB = F/2 The maximum bending moment for a simply supported beam with a centered
