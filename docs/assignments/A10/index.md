@@ -111,7 +111,10 @@ deflection limits. I spent around 3 hours on my portion of the assignment.
 <img width="1024" height="912" alt="image" src="https://github.com/user-attachments/assets/d79811b9-dad5-4a10-a58f-0511c997b9b6" />
 <img width="1192" height="690" alt="image" src="https://github.com/user-attachments/assets/b38a947c-66c3-4770-87be-a1ef01384469" />
 <img width="1262" height="930" alt="image" src="https://github.com/user-attachments/assets/053dbd2a-ff70-4605-8ba8-0a892d9020c7" />
-<img width="1250" height="938" alt="image" src="https://github.com/user-attachments/assets/0aa7668c-0fd6-4cf7-a88b-22008ba2ceed" />
+<img width="1250" height="938" alt="image" src="https://github.com/user-attachments/assets/0aa7668c-0fd6-4cf7-a88b-22008ba2ceed" /> 
+
+### CAD File Link 
+* 
 
 ### Cost- Farima Pournia 
 | Item Number | Quantity | Name | Cost/Item | Cost | Purchase Link | 
