@@ -6,7 +6,7 @@ In this assignment the goal was to design a pulley system that transfers power b
 ## Analyze
 
 ### Belt 
-* 
+* The first part of the assignment was to design and select a belt from McMaster Carr that met the parameters given.  
 
 ## Decide
 
