@@ -1,7 +1,7 @@
 # A11 – Motor Selection
 
 ## Objective
-* The o
+* 
 
 ## Analyze
 ### Vertical Frame FEA 
@@ -23,8 +23,12 @@
 <img width="1070" height="1034" alt="image" src="https://github.com/user-attachments/assets/7536c656-c5c9-4105-a1b7-c99234dd0d08" />
 
 
-* Overall the simulations between the two different types of meshes matched up resulst After running these simulations I noticed a couple of trends throughout the different scenes.  
+* Overall the simulations between the two different types of meshes matched up results very well. The locations of the max forces and deformation lined up and the numbers of the maximum forces and deflection were within 5 percent of each other. The safety factors also looked exactly the same between the two meshes. One main difference that I noticed between a fine or coarse mesh was that a more fine mesh always calculated a higher deflection or stress and usually in a slightly larger area. The increase in cells allow the sim to be more accurate and to account for forces that may have been missed with a more coarse mesh. After running these simulations I noticed a couple of trends throughout the different scenes. One was that the location of the max stresses and deflections were always in the corner. Another was that the beam had a tendency to twist around it's axis starting from the top where the torque is first applied and decreasing till the bottom. Some changed to add in order to make the column more structural sound could be adding thicker flange pads at the top where the column experiences the most amount of torque. The most amount of deflection and stress was seen at the top of the column where the torque from the motor was experienced. 
 
-## Decide
+### Floating Bearing Mount 
+* To design the floating bearing mount, I made the thickness 0.25 inches. The length is 3 inches with a width of 2 inches that will fit on the aluminum bar. The mount has a hole in the middle for the lead screw is set to 0.3 inches with a tolerance of +- 0.0005 from the Machinery Handbook. There are 4 holes on the mount for #10 screw, the diameter of the screws is 0.2 inches. 
+<img width="1060" height="1054" alt="image" src="https://github.com/user-attachments/assets/1f13231e-337a-4ad6-a4e0-c524cbc64ecb" />
+<img width="848" height="1138" alt="image" src="https://github.com/user-attachments/assets/bf05c468-df9b-4171-a4c8-aa9c95532fa2" />
 
 ## Communicate
+* I spent 5 hours on this assignment. 
