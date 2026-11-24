@@ -134,8 +134,10 @@ $$
 The selected bracket is the McMaster-Carr 5537T348 90-degree extended corner bracket. The bracket is manufactured from powder-coated 6063-T5 aluminum and includes M8 mounting hardware.
 <img width="1302" height="790" alt="image" src="https://github.com/user-attachments/assets/98927b45-89f5-4c8e-86e9-603fc532d653" />
 <img width="756" height="838" alt="image" src="https://github.com/user-attachments/assets/59d05d78-80ce-4fda-b645-a7522ba5d516" />
+
 ### Bracket Free-Body Diagram 
 <img width="800" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b1e1198-fe06-4d66-9d82-63d32e0429fa" /> 
+
 * The bracket FBD is used to determine the forces transferred through the mounting bolts and the resulting bending moment in the bracket. The applied force and moment arm must be measured from the actual bracket geometry and connection location.
 ### Bracket Bending Stress 
 
@@ -202,6 +204,7 @@ $$
 * The calculated bending stress is compared with the appropriate material strength to evaluate the bracket's ability to withstand the applied load.
 
 <img width="864" height="1176" alt="image" src="https://github.com/user-attachments/assets/96cd6cfa-4354-4030-ac8a-f5c28cb2b3e4" /> 
+
 ### Bolt Shear Stress 
 
 The average shear stress in the mounting bolts is calculated using:
@@ -315,9 +318,9 @@ The structural analysis evaluates the frame's ability to withstand the applied l
 | Elastic modulus | 10,000,000 | psi |
 | Poisson's ratio | 0.33 | - |
 
-The final material properties should be checked against the extrusion manufacturer's specifications.
+* The final material properties should be checked against the extrusion manufacturer's specifications.
 
-For a required factor of safety of 4, the preliminary allowable stress is:
+* For a required factor of safety of 4, the preliminary allowable stress is:
 
 $$
 \sigma_{allow}=\frac{S_y}{FOS}
@@ -331,7 +334,7 @@ $$
 \boxed{\sigma_{allow}=8,750\text{ psi}}
 $$
 
-This allowable stress provides a preliminary comparison value for evaluating the FEA results.
+* This allowable stress provides a preliminary comparison value for evaluating the FEA results.
 
 ## Top Frame Finite Element Analysis (FEA)
 * SolidWorks Simulation is used to evaluate the structural performance of the top frame under the expected operating loads. The simulation provides a visual representation of the stress distribution and displacement throughout the extrusion.
@@ -341,7 +344,8 @@ The analysis focuses on determining whether the top frame can withstand the appl
 <img width="1360" height="762" alt="image" src="https://github.com/user-attachments/assets/56cc7b09-9c56-427d-bdf6-264b165ee1ce" />
 
 
-The factor of safety based on the maximum von Mises stress is calculated using:
+
+* The factor of safety based on the maximum von Mises stress is calculated using:
 
 $$
 FOS = \frac{S_y}{\sigma_{\mathrm{von\,Mises}}}
@@ -372,7 +376,7 @@ The motor reaction moments are also considered because they may cause twisting o
 
 ### Vertical Frame FEA 
 * For this part for the assignment I conducted FEA on the vertical components of the frame in order to analyze the effect forces will have on our frame. I used Solidworks to conduct this analysis and run my simulation. I first isolated one of the vertical columns in CAD and then assigned the correct material of 6063-T4 Aluminum then proceeded to assign two forces to the column. I applied one axial compression force of 2 kN as a result of the top of the frame pushing down on the column. The second force I added to the simulation was the torque of 6 N that the motor will exert on the column, this force was added to the side of the column around the center axis. After assigning my forces I proceeded to add in a fixed fixture for the bottom of the column.
-<img width="518" height="1098" alt="image" src="https://github.com/user-attachments/assets/ea6de894-9b1c-49b1-afd9-22bc7eacac14" />
+<img width="518" height="1098" alt="image" src="https://github.com/user-attachments/assets/ea6de894-9b1c-49b1-afd9-22bc7eacac14" /> 
 
 * In order to run a convergence check I ran two simulations with two different types of mesh. My first simulations started out with a mesh sizing directly in between fine and coarse mesh size. After running the sim gathered data about the stress scene that showed the variation of stress across the whole column. This scene showed that the max stress was located at the bottom corner of the column at around a value of 6x10^6 N/m^2. The next scene I look at was deflection across the column at around 0.14 mm. The max deflection was at the top corner where the compressive force is being applied also at the same corner where the max stress was. The next scene that was created was a safety factor scene that allowed me to see how close our design material and vertical column was close to the limit of the safety factor for this design. The entire column was well within the safety factor. 
 
@@ -386,7 +390,7 @@ The motor reaction moments are also considered because they may cause twisting o
 <img width="444" height="1024" alt="image" src="https://github.com/user-attachments/assets/3af5ebab-b812-4801-994e-b82e463171c1" />
 <img width="1254" height="1052" alt="image" src="https://github.com/user-attachments/assets/c5af6949-36df-4559-8585-a3544f422775" /> 
 <img width="1178" height="1050" alt="image" src="https://github.com/user-attachments/assets/10d6dd93-6b5e-4e3f-8531-6ed9dfd7cadc" /> 
-<img width="1070" height="1034" alt="image" src="https://github.com/user-attachments/assets/7536c656-c5c9-4105-a1b7-c99234dd0d08" />
+<img width="1070" height="1034" alt="image" src="https://github.com/user-attachments/assets/7536c656-c5c9-4105-a1b7-c99234dd0d08" /> 
 
 
 * Overall the simulations between the two different types of meshes matched up results very well. The locations of the max forces and deformation lined up and the numbers of the maximum forces and deflection were within 5 percent of each other. The safety factors also looked exactly the same between the two meshes. One main difference that I noticed between a fine or coarse mesh was that a more fine mesh always calculated a higher deflection or stress and usually in a slightly larger area. The increase in cells allow the sim to be more accurate and to account for forces that may have been missed with a more coarse mesh. After running these simulations I noticed a couple of trends throughout the different scenes. One was that the location of the max stresses and deflections were always in the corner. Another was that the beam had a tendency to twist around it's axis starting from the top where the torque is first applied and decreasing till the bottom. Some changed to add in order to make the column more structural sound could be adding thicker flange pads at the top where the column experiences the most amount of torque. The most amount of deflection and stress was seen at the top of the column where the torque from the motor was experienced. 
@@ -394,7 +398,7 @@ The motor reaction moments are also considered because they may cause twisting o
 ### Floating Bearing Mount 
 * To design the floating bearing mount, I made the thickness 0.25 inches. The length is 3 inches with a width of 2 inches that will fit on the aluminum bar. The mount has a hole in the middle for the lead screw is set to 0.3 inches with a tolerance of +- 0.0005 from the Machinery Handbook. There are 4 holes on the mount for #10 screw, the diameter of the screws is 0.2 inches. 
 <img width="1060" height="1054" alt="image" src="https://github.com/user-attachments/assets/1f13231e-337a-4ad6-a4e0-c524cbc64ecb" />
-<img width="848" height="1138" alt="image" src="https://github.com/user-attachments/assets/bf05c468-df9b-4171-a4c8-aa9c95532fa2" />
+<img width="848" height="1138" alt="image" src="https://github.com/user-attachments/assets/bf05c468-df9b-4171-a4c8-aa9c95532fa2" /> 
 
 ## Communicate
 ### Bill of Materials 
