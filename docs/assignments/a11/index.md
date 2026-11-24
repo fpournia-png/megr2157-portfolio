@@ -88,6 +88,7 @@ $$
 * However, the gearbox has a maximum permissible output torque of 6 N·m. Therefore, the output torque must not exceed this gearbox rating.
 * Important: The 1.03 N·m motor value is holding torque, not confirmed running torque. The actual operating torque depends on motor speed and the torque-speed curve. The final FEA moment must be based on the verified operating or design reaction torque, rather than automatically assuming the holding torque is available during operation.
 <img width="1116" height="958" alt="image" src="https://github.com/user-attachments/assets/8c37fb12-d835-4d1e-8a97-542e69e5b9b5" />
+
 ### Equilibrium Equation 
 
 The reaction forces and moments are determined using static equilibrium.
