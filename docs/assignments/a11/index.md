@@ -338,11 +338,11 @@ The analysis focuses on determining whether the top frame can withstand the appl
 The factor of safety based on the maximum von Mises stress is calculated using:
 
 $$
-FOS=\frac{S_y}{\sigma_{von\ Mises}}
+FOS = \frac{S_y}{\sigma_{\mathrm{von\,Mises}}}
 $$
 
 $$
-FOS=\frac{241.3\text{ MPa}}{\sigma_{von\ Mises}}
+FOS = \frac{241.3\,\mathrm{MPa}}{\sigma_{\mathrm{von\,Mises}}}
 $$
 
 ### FEA Results Discussion
@@ -399,6 +399,8 @@ The motor reaction moments are also considered because they may cause twisting o
 | 1 | McMaster-Carr 5537T348 mounting brackets | 4 | $13.21 | $52.84 |
 | 2 | STEPPERONLINE 23HS22-2804S-HG10 stepper motors | 2 | $79.94 | $159.88 |
 | | **Component Subtotal** | | | **$212.72** |
+
+
 ### Lessons Learned
 * Throughout this project, our group gained a better understanding of the engineering design process and the importance of coordinating individual components to develop a complete tensile testing machine. Each group member was responsible for different portions of the design, including the motor and coupler system, structural frame connections, mounting brackets, vertical supports, and bearing mounts. Combining these individual designs required communication, coordination, and consideration of how each component would function within the complete assembly.
 
@@ -412,5 +414,4 @@ The motor reaction moments are also considered because they may cause twisting o
 
 * Overall, this project strengthened our understanding of mechanical design, component selection, structural analysis, finite element analysis, and engineering documentation. It also taught us that successful engineering design requires more than designing individual components; every part must work together safely and effectively to meet the requirements of the complete system.
 * I spent 10 hours on this assignment.
-* CAD File
 * [Cad File](https://github.com/fpournia-png/megr2157-portfolio/blob/main/docs/assignments/a11/A11_Updated%20(1).zip)
