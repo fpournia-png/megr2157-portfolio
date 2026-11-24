@@ -26,11 +26,13 @@ Frame bolt reaction couple (idealized): Ff = T / s = 6,000 / 39.1 = 153.45 N per
 ### Coupler Design 
 * The custom unequal-bore coupler is modeled in SolidWorks to connect the geared motor output to the 3/8-inch lead screw. Motor-side torque transfer uses the existing keyed shaft. A radial M5 × 0.8 set screw is modeled on the lead-screw side, intended to contact a shallow flat near the shaft end.
 <img width="1192" height="432" alt="image" src="https://github.com/user-attachments/assets/12895a15-f255-4a0e-be0c-94aa5993f5a6" />
+
 * Hollow-shaft torsion: J = (π/32)(Do⁴ − Di⁴) and τmax = 16TDo/[π(Do⁴ − Di⁴)]. Allowable shear: τallow = Sy/(√3 SF) = 240/(1.732 × 4) = 34.64 MPa.
 For Di = 14 mm and T = 6,000 N·mm, solving τmax = τallow gives idealized minimum Do = 15.08 mm. At actual Do = 30 mm, maximum bulk torsional shear stress is 1.188 MPa < 34.64 MPa.
 <img width="1102" height="618" alt="image" src="https://github.com/user-attachments/assets/e3a7ff3b-dc99-4c54-b414-72730a5c1e4c" />
 <img width="1152" height="368" alt="image" src="https://github.com/user-attachments/assets/cc99ad15-31b5-4fdc-b2dc-0dfc178ea96e" />
 <img width="780" height="702" alt="image" src="https://github.com/user-attachments/assets/c418f3fd-51e4-49a3-8bc4-3dd511e3ccb7" />
+
 * Verification note: A body torsion pass does not verify the single set screw. A friction-only model at µ = 0.20 and effective radius 4 mm requires N ≈ 4,395 / (0.20 × 4) = 5.49 kN normal force; this is not independently validated for an M5 set screw into 6061-T6 threads. Motor keyway stress concentration, shaft-tip contact, and lead-screw thrust bearing support remain open verification items.
 ### Engineering Lessons and Handoff 
 * The CAD fit-up revealed that aligning the motor and coupler did not guarantee that the L-shaped bracket could reach or clear the upper frame rail. The bracket had to be checked in the real assembly and reoriented. The coupler analysis also separated bulk material strength from connection reliability: a very low torsional shear stress does not prove that a set screw can hold torque on a threaded lead screw.
