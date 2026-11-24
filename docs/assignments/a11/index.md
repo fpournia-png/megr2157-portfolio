@@ -1,7 +1,6 @@
 # A11 – Motor Selection
 
 ## Objective
-* 
 
 ## Analyze
 ### Vertical Frame FEA 
