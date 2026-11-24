@@ -71,19 +71,8 @@ In addition to the axial loading, the motor mounting arrangement introduces reac
 
 * The theoretical gearbox output torque is calculated using:
 
-$$
-T_{out}=T_{motor}\times G\times\eta
-$$
+<img width="274" height="204" alt="image" src="https://github.com/user-attachments/assets/29f25a8f-ac04-4a64-9501-e44090d2ba88" />
 
-Substituting the motor specifications:
-
-$$
-T_{out}=1.03(10)(0.92)
-$$
-
-$$
-\boxed{T_{out}=9.476\text{ N}\cdot\text{m}}
-$$
 
 
 
