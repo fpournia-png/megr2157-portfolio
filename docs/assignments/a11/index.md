@@ -71,19 +71,7 @@ In addition to the axial loading, the motor mounting arrangement introduces reac
 
 * The theoretical gearbox output torque is calculated using:
 
-```math
-T_{out} = T_{motor} \times G \times \eta
-```
 
-Substituting the motor specifications:
-
-```math
-T_{out} = 1.03 \times 10 \times 0.92
-```
-
-```math
-T_{out} = 9.476 \ \mathrm{N \cdot m}
-```
 
 
 * However, the gearbox has a maximum permissible output torque of 6 N·m. Therefore, the output torque must not exceed this gearbox rating.
