@@ -412,4 +412,5 @@ The motor reaction moments are also considered because they may cause twisting o
 
 * Overall, this project strengthened our understanding of mechanical design, component selection, structural analysis, finite element analysis, and engineering documentation. It also taught us that successful engineering design requires more than designing individual components; every part must work together safely and effectively to meet the requirements of the complete system.
 * I spent 10 hours on this assignment.
-* CAD File 
+* CAD File
+* [Cad File](https://github.com/fpournia-png/megr2157-portfolio/blob/main/docs/assignments/a11/A11_Updated%20(1).zip)
