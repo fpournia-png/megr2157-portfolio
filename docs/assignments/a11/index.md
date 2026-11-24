@@ -13,11 +13,14 @@
 * The bracket is modeled in SolidWorks as a gusset-reinforced L-shaped mounting component. The final conceptual layout positions the vertical mounting leg alongside the upper T-slot rail, keeping the motor concentric with the lead screw. The two elongated frame slots were modified to 5.5 mm clearance width.
 
 <img width="1204" height="474" alt="image" src="https://github.com/user-attachments/assets/c3b6cc16-0174-4565-a458-cab83c282f4f" /> 
+
 * Allowable bearing stress = Sy / SF = 250 / 4 = 62.50 MPa. Minimum thickness from σb = Fb/(dt): tmin = 45.13 / (5 × 62.5) = 0.144 mm. At actual t = 3 mm: σb = 45.13/(5 × 3) = 3.01 MPa < 62.50 MPa.
 Frame bolt reaction couple (idealized): Ff = T / s = 6,000 / 39.1 = 153.45 N per bolt. A gravity-only plate estimate with F = 16 N, span 46.16 mm, width 65 mm gives ≈7.57 MPa bending stress and ≈0.018 mm deflection. These idealizations are NOT a full frame-joint stiffness or T-nut strength analysis.
+
 <img width="888" height="522" alt="image" src="https://github.com/user-attachments/assets/a02be911-0c3e-4bef-b841-ec2a4e57d10a" />
 <img width="1072" height="500" alt="image" src="https://github.com/user-attachments/assets/b15ceff0-9675-439b-96b0-11d91beb4716" />
 <img width="1250" height="392" alt="image" src="https://github.com/user-attachments/assets/ef50e217-a461-4ada-8acc-318bf1bd68c7" />
+
 * Verification note: The 3 mm thickness passes the local bolt-bearing analysis, but joint preload, plate bending under reaction torque, prying, actual fastener grade and rail attachment require final verification. Motor holes are nominal Ø5.0 mm; confirm bolt clearance before fabrication.
 
 ### Coupler Design 
