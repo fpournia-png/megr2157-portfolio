@@ -391,4 +391,25 @@ The motor reaction moments are also considered because they may cause twisting o
 <img width="848" height="1138" alt="image" src="https://github.com/user-attachments/assets/bf05c468-df9b-4171-a4c8-aa9c95532fa2" />
 
 ## Communicate
-* I spent 10 hours on this assignment. 
+### Bill of Materials 
+## Component Costs
+
+| Item | Description | Quantity | Unit Cost | Total Cost |
+|:----:|:------------|:--------:|----------:|-----------:|
+| 1 | McMaster-Carr 5537T348 mounting brackets | 4 | $13.21 | $52.84 |
+| 2 | STEPPERONLINE 23HS22-2804S-HG10 stepper motors | 2 | $79.94 | $159.88 |
+| | **Component Subtotal** | | | **$212.72** |
+### Lessons Learned
+* Throughout this project, our group gained a better understanding of the engineering design process and the importance of coordinating individual components to develop a complete tensile testing machine. Each group member was responsible for different portions of the design, including the motor and coupler system, structural frame connections, mounting brackets, vertical supports, and bearing mounts. Combining these individual designs required communication, coordination, and consideration of how each component would function within the complete assembly.
+
+* One of the most important lessons we learned was the importance of selecting components based on both their specifications and their intended operating conditions. During the motor selection process, we learned that a motor's holding torque does not necessarily represent the torque available during operation. We also learned that gearbox limitations, mechanical efficiency, and operating speed must be considered when selecting a drive system. Similarly, designing the motor mounting brackets and couplers demonstrated that a component passing a basic strength calculation does not automatically mean the entire connection is reliable. Fastener strength, contact forces, alignment, and connection geometry must also be evaluated.
+
+* Another important lesson involved structural analysis and the use of SolidWorks Simulation. Through the FEA of the top frame and vertical supports, we learned how applied forces, moments, material properties, fixtures, and mesh sizes influence simulation results. Comparing simulations with different mesh sizes helped us understand the importance of mesh convergence and checking whether the results remain consistent as the mesh becomes finer. We also observed that stress concentrations and maximum displacement often occur near corners, supports, and locations where loads are applied. These results showed us why identifying critical areas is important when evaluating structural integrity and considering design improvements.
+
+* We also learned the importance of using free-body diagrams and hand calculations before performing simulations. Breaking the tensile tester into individual components and analyzing the forces and moments acting on each connection helped us better understand the load paths throughout the machine. Calculations involving bending stress, bolt shear, bearing stress, tear-out, torsion, and factor of safety provided a foundation for evaluating whether the selected components could withstand the expected loading conditions. We learned that assumptions made during preliminary calculations must be verified against the actual component geometry, manufacturer specifications, and final assembly.
+
+* Finally, this project demonstrated the importance of teamwork and communication when completing a large engineering design. Dividing the work between three group members allowed us to focus on individual design responsibilities while contributing to the same overall objective. However, we also learned that individually completed components must be checked together in the final SolidWorks assembly to identify potential alignment, clearance, and connection issues. Sharing CAD models, calculations, and simulation results helped us combine our work into a more complete design.
+
+* Overall, this project strengthened our understanding of mechanical design, component selection, structural analysis, finite element analysis, and engineering documentation. It also taught us that successful engineering design requires more than designing individual components; every part must work together safely and effectively to meet the requirements of the complete system.
+* I spent 10 hours on this assignment.
+* CAD File 
