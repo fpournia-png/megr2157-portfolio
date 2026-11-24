@@ -40,14 +40,15 @@ The separate three-page calculation sheets, supplied in the package, contain the
 ### Frame Connections, Bracket Design, and Top Frame FEA - Bekah 
 #### Design Responsibilities: Structural frame connections, motor twisting analysis, mounting bracket design, and top frame structural verification.
 #### Design Objective
-The objective of this portion of the project is to design and analyze the structural connections between the vertical supports and the top frame of the tensile tester. The frame must support the applied tensile loads while maintaining sufficient strength and stiffness to prevent excessive bending, twisting, or deformation during operation.
+* The objective of this portion of the project is to design and analyze the structural connections between the vertical supports and the top frame of the tensile tester. The frame must support the applied tensile loads while maintaining sufficient strength and stiffness to prevent excessive bending, twisting, or deformation during operation.
 The analysis focuses on the forces and moments transferred from the two motors into the frame, the structural integrity of the mounting brackets and fasteners, and the ability of the top frame to withstand the applied loading conditions. Hand calculations and free-body diagrams are used to determine the forces and moments acting on the connections. SolidWorks Simulation is then used to evaluate the top frame through finite element analysis (FEA), including von Mises stress, displacement, factor of safety, and mesh convergence.
 #### Known and Unknown Variables
-The following known variables were identified before beginning the frame connection and structural analysis, and the variables that must be determined through engineering calculations or SolidWorks Simulation.
+* The following known variables were identified before beginning the frame connection and structural analysis, and the variables that must be determined through engineering calculations or SolidWorks Simulation.
+  
 <img width="760" height="826" alt="image" src="https://github.com/user-attachments/assets/b6da24a0-4e68-4b33-bbc3-dbc34733b5b4" /> 
 
 #### Frame Connection and Motor Twisting Analysis
-The tensile tester uses two identical stepper motors positioned above the lead screw system. Both motors are mounted with their shafts oriented vertically downward. The center-to-center spacing between the motor and vertical support locations is 9.62 inches.
+* The tensile tester uses two identical stepper motors positioned above the lead screw system. Both motors are mounted with their shafts oriented vertically downward. The center-to-center spacing between the motor and vertical support locations is 9.62 inches.
 Each motor drives a lead screw that contributes to the movement of the crosshead. The two lead screws share the required tensile load, resulting in an axial load path of 1,000 N per lead screw under the 2,000 N maximum loading condition.
 In addition to the axial loading, the motor mounting arrangement introduces reaction torques into the frame. These reaction torques must be considered because they can cause twisting or warping of the top extrusion and place additional loading on the mounting brackets.
 
@@ -66,7 +67,7 @@ In addition to the axial loading, the motor mounting arrangement introduces reac
 | Gearbox backlash | ≤30 | Arcmin |
 
 
-The theoretical gearbox output torque is calculated using:
+* The theoretical gearbox output torque is calculated using:
 
 $$
 T_{out}=T_{motor}\times G\times\eta
