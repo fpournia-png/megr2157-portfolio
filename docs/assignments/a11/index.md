@@ -4,6 +4,36 @@
 * The objective of this project is to design and develop a functional tensile testing machine capable of applying a maximum tensile load of 2 kN to evaluate the mechanical properties of materials. The design incorporates a lead screw drive system, stepper motors, a structural frame, a movable crosshead, and appropriate mounting components to safely and effectively apply the required load. The project involves selecting and sizing mechanical components, performing engineering calculations and free-body diagrams, evaluating structural integrity through finite element analysis (FEA), and creating a complete SolidWorks assembly. Each team member is responsible for specific portions of the design while collaborating on the final assembly, bill of materials, engineering costs, and project documentation. The final goal is to produce a complete, well-documented design that meets the project requirements while demonstrating the application of mechanical engineering principles.
 
 ## Analyze
+### Motor Selection 
+<img width="1248" height="738" alt="image" src="https://github.com/user-attachments/assets/c1e0a816-67ce-4b9a-8f35-9f6101db36fd" /> 
+<img width="1196" height="700" alt="image" src="https://github.com/user-attachments/assets/5236648b-904a-482d-bf96-8346b672270b" /> 
+<img width="1376" height="942" alt="image" src="https://github.com/user-attachments/assets/4530e46d-3a14-490d-be70-38a6578b30ca" /> 
+
+### Motor Mount Design 
+* The bracket is modeled in SolidWorks as a gusset-reinforced L-shaped mounting component. The final conceptual layout positions the vertical mounting leg alongside the upper T-slot rail, keeping the motor concentric with the lead screw. The two elongated frame slots were modified to 5.5 mm clearance width.
+
+<img width="1204" height="474" alt="image" src="https://github.com/user-attachments/assets/c3b6cc16-0174-4565-a458-cab83c282f4f" /> 
+* Allowable bearing stress = Sy / SF = 250 / 4 = 62.50 MPa. Minimum thickness from σb = Fb/(dt): tmin = 45.13 / (5 × 62.5) = 0.144 mm. At actual t = 3 mm: σb = 45.13/(5 × 3) = 3.01 MPa < 62.50 MPa.
+Frame bolt reaction couple (idealized): Ff = T / s = 6,000 / 39.1 = 153.45 N per bolt. A gravity-only plate estimate with F = 16 N, span 46.16 mm, width 65 mm gives ≈7.57 MPa bending stress and ≈0.018 mm deflection. These idealizations are NOT a full frame-joint stiffness or T-nut strength analysis.
+<img width="888" height="522" alt="image" src="https://github.com/user-attachments/assets/a02be911-0c3e-4bef-b841-ec2a4e57d10a" />
+<img width="1072" height="500" alt="image" src="https://github.com/user-attachments/assets/b15ceff0-9675-439b-96b0-11d91beb4716" />
+<img width="1250" height="392" alt="image" src="https://github.com/user-attachments/assets/ef50e217-a461-4ada-8acc-318bf1bd68c7" />
+* Verification note: The 3 mm thickness passes the local bolt-bearing analysis, but joint preload, plate bending under reaction torque, prying, actual fastener grade and rail attachment require final verification. Motor holes are nominal Ø5.0 mm; confirm bolt clearance before fabrication.
+
+### Coupler Design 
+* The custom unequal-bore coupler is modeled in SolidWorks to connect the geared motor output to the 3/8-inch lead screw. Motor-side torque transfer uses the existing keyed shaft. A radial M5 × 0.8 set screw is modeled on the lead-screw side, intended to contact a shallow flat near the shaft end.
+<img width="1192" height="432" alt="image" src="https://github.com/user-attachments/assets/12895a15-f255-4a0e-be0c-94aa5993f5a6" />
+* Hollow-shaft torsion: J = (π/32)(Do⁴ − Di⁴) and τmax = 16TDo/[π(Do⁴ − Di⁴)]. Allowable shear: τallow = Sy/(√3 SF) = 240/(1.732 × 4) = 34.64 MPa.
+For Di = 14 mm and T = 6,000 N·mm, solving τmax = τallow gives idealized minimum Do = 15.08 mm. At actual Do = 30 mm, maximum bulk torsional shear stress is 1.188 MPa < 34.64 MPa.
+<img width="1102" height="618" alt="image" src="https://github.com/user-attachments/assets/e3a7ff3b-dc99-4c54-b414-72730a5c1e4c" />
+<img width="1152" height="368" alt="image" src="https://github.com/user-attachments/assets/cc99ad15-31b5-4fdc-b2dc-0dfc178ea96e" />
+<img width="780" height="702" alt="image" src="https://github.com/user-attachments/assets/c418f3fd-51e4-49a3-8bc4-3dd511e3ccb7" />
+* Verification note: A body torsion pass does not verify the single set screw. A friction-only model at µ = 0.20 and effective radius 4 mm requires N ≈ 4,395 / (0.20 × 4) = 5.49 kN normal force; this is not independently validated for an M5 set screw into 6061-T6 threads. Motor keyway stress concentration, shaft-tip contact, and lead-screw thrust bearing support remain open verification items.
+### Engineering Lessons and Handoff 
+* The CAD fit-up revealed that aligning the motor and coupler did not guarantee that the L-shaped bracket could reach or clear the upper frame rail. The bracket had to be checked in the real assembly and reoriented. The coupler analysis also separated bulk material strength from connection reliability: a very low torsional shear stress does not prove that a set screw can hold torque on a threaded lead screw.
+Available to integrate: Motor/bracket/coupler subassembly screenshots; revised bracket, coupler, and lead-screw STEP models; the three detailed one-page calculation sheets; and the manufacturer motor curve. The final BOM must use actual purchase quotations and verified labor hours rather than estimated completion claims.
+The separate three-page calculation sheets, supplied in the package, contain the detailed A10-style equations and diagrams. Numbered image files 122.png (motor), 126.png (mount), and 130.png (coupler) can be inserted into the shared document if the group wants the full calculation pages in addition to this copy-ready narrative.
+
 ### Frame Connections, Bracket Design, and Top Frame FEA - Bekah 
 #### Design Responsibilities: Structural frame connections, motor twisting analysis, mounting bracket design, and top frame structural verification.
 #### Design Objective
@@ -17,6 +47,321 @@ The following known variables were identified before beginning the frame connect
 The tensile tester uses two identical stepper motors positioned above the lead screw system. Both motors are mounted with their shafts oriented vertically downward. The center-to-center spacing between the motor and vertical support locations is 9.62 inches.
 Each motor drives a lead screw that contributes to the movement of the crosshead. The two lead screws share the required tensile load, resulting in an axial load path of 1,000 N per lead screw under the 2,000 N maximum loading condition.
 In addition to the axial loading, the motor mounting arrangement introduces reaction torques into the frame. These reaction torques must be considered because they can cause twisting or warping of the top extrusion and place additional loading on the mounting brackets.
+
+### Motor Specification
+* The selected motor is the STEPPERONLINE 23HS22-2804S-HG10 NEMA 23 stepper motor with a 10:1 planetary gearbox.
+
+| **Motor Specification** | **Value** | **Units** |
+|:---|---:|:---|
+| Motor holding torque | 1.03 | N·m |
+| Gearbox ratio | 10:1 | - |
+| Gearbox efficiency | 92 | % |
+| Theoretical gearbox output torque | 9.476 | N·m |
+| Maximum permissible gearbox output torque | 6 | N·m |
+| Motor phase current | 2.8 | A |
+| Motor phase resistance | 0.9 | Ω |
+| Gearbox backlash | ≤30 | Arcmin |
+
+
+The theoretical gearbox output torque is calculated using:
+
+$$
+T_{out}=T_{motor}\times G\times\eta
+$$
+
+Substituting the motor specifications:
+
+$$
+T_{out}=1.03(10)(0.92)
+$$
+
+$$
+\boxed{T_{out}=9.476\text{ N}\cdot\text{m}}
+$$
+
+* However, the gearbox has a maximum permissible output torque of 6 N·m. Therefore, the output torque must not exceed this gearbox rating.
+* Important: The 1.03 N·m motor value is holding torque, not confirmed running torque. The actual operating torque depends on motor speed and the torque-speed curve. The final FEA moment must be based on the verified operating or design reaction torque, rather than automatically assuming the holding torque is available during operation.
+<img width="1116" height="958" alt="image" src="https://github.com/user-attachments/assets/8c37fb12-d835-4d1e-8a97-542e69e5b9b5" />
+### Equilibrium Equation 
+
+The reaction forces and moments are determined using static equilibrium.
+
+**Sum of forces in the horizontal direction:**
+
+$$
+\sum F_x=0
+$$
+
+**Sum of forces in the vertical direction:**
+
+$$
+\sum F_y=0
+$$
+
+**Sum of forces in the remaining direction:**
+
+$$
+\sum F_z=0
+$$
+
+**Sum of moments about the x-axis:**
+
+$$
+\sum M_x=0
+$$
+
+**Sum of moments about the y-axis:**
+
+$$
+\sum M_y=0
+$$
+
+**Sum of moments about the z-axis:**
+
+$$
+\sum M_z=0
+$$
+
+* The equations are applied to the individual motor connections, vertical supports, and top frame to determine the reaction forces and moments at each connection.
+### Mounting Bracket Design and Analysis 
+* The mounting brackets connect the vertical supports to the 40 Series T-slot frame. These connections must resist the forces and moments transferred from the motor and lead screw system while maintaining proper alignment of the tensile tester.
+The selected bracket is the McMaster-Carr 5537T348 90-degree extended corner bracket. The bracket is manufactured from powder-coated 6063-T5 aluminum and includes M8 mounting hardware.
+<img width="1302" height="790" alt="image" src="https://github.com/user-attachments/assets/98927b45-89f5-4c8e-86e9-603fc532d653" />
+<img width="756" height="838" alt="image" src="https://github.com/user-attachments/assets/59d05d78-80ce-4fda-b645-a7522ba5d516" />
+### Bracket Free-Body Diagram 
+<img width="800" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b1e1198-fe06-4d66-9d82-63d32e0429fa" /> 
+* The bracket FBD is used to determine the forces transferred through the mounting bolts and the resulting bending moment in the bracket. The applied force and moment arm must be measured from the actual bracket geometry and connection location.
+### Bracket Bending Stress 
+
+The bending moment is calculated using:
+
+$$
+M=FL
+$$
+
+Where:
+
+- $M$ = bending moment (N·mm)
+- $F$ = applied force (N)
+- $L$ = perpendicular distance from the bolt-group reference point to the force line of action (mm)
+
+For a simplified rectangular cross-section, the section modulus is:
+
+$$
+S=\frac{bt^2}{6}
+$$
+
+Where:
+
+- $b$ = section width (mm)
+- $t$ = section thickness (mm)
+
+The bending stress is calculated using:
+
+$$
+\sigma_b=\frac{M}{S}
+$$
+
+* The calculated bending stress is compared with the appropriate material strength to evaluate the bracket's ability to withstand the applied load.
+
+The bending moment is calculated using:
+
+$$
+M=FL
+$$
+
+Where:
+
+- $M$ = bending moment (N·mm)
+- $F$ = applied force (N)
+- $L$ = perpendicular distance from the bolt-group reference point to the force line of action (mm)
+
+For a simplified rectangular cross-section, the section modulus is:
+
+$$
+S=\frac{bt^2}{6}
+$$
+
+Where:
+
+- $b$ = section width (mm)
+- $t$ = section thickness (mm)
+
+The bending stress is calculated using:
+
+$$
+\sigma_b=\frac{M}{S}
+$$
+
+* The calculated bending stress is compared with the appropriate material strength to evaluate the bracket's ability to withstand the applied load.
+
+<img width="864" height="1176" alt="image" src="https://github.com/user-attachments/assets/96cd6cfa-4354-4030-ac8a-f5c28cb2b3e4" /> 
+### Bolt Shear Stress 
+
+The average shear stress in the mounting bolts is calculated using:
+
+$$
+\tau=\frac{F_s}{A_s}
+$$
+
+Where:
+
+- $\tau$ = bolt shear stress (MPa)
+- $F_s$ = shear force carried by the bolt (N)
+- $A_s$ = appropriate bolt shear area (mm²)
+
+If the bolts share the applied force equally, the force per bolt is:
+
+$$
+F_{bolt}=\frac{F_{total}}{n}
+$$
+
+Where $n$ is the number of bolts actually carrying the load.
+
+### Bolt Tensile Stress
+
+If the applied moment produces tension in the mounting bolts, the tensile stress is calculated using:
+
+$$
+\sigma_t=\frac{F_t}{A_t}
+$$
+
+Where:
+
+- $\sigma_t$ = bolt tensile stress (MPa)
+- $F_t$ = tensile force in the bolt (N)
+- $A_t$ = tensile stress area of the bolt (mm²)
+
+### Bearing Stress 
+
+Bearing stress evaluates the contact pressure between the bolt and the bracket material.
+
+$$
+\sigma_{bearing}=\frac{F}{td}
+$$
+
+Where:
+
+- $F$ = force transferred through the bolt (N)
+- $t$ = bracket thickness (mm)
+- $d$ = bolt or hole bearing diameter (mm)
+
+### Tear Out Stress 
+
+Tear-out analysis evaluates the possibility of material failure between a bolt hole and the edge of the bracket.
+
+The approximate tear-out area is:
+
+$$
+A_{tear}=2te
+$$
+
+The average tear-out stress is:
+
+$$
+\tau_{tear}=\frac{F}{A_{tear}}
+$$
+
+Where:
+
+- $t$ = bracket thickness (mm)
+- $e$ = distance from the hole edge to the bracket edge (mm)
+- $F$ = force transferred through the connection (N)
+
+### Bracket Factor of Safety 
+
+The factor of safety against yielding is calculated using:
+
+$$
+FOS=\frac{S_y}{\sigma}
+$$
+
+Where:
+
+- $S_y$ = material yield strength (MPa)
+- $\sigma$ = calculated stress (MPa)
+
+The factor of safety is evaluated for the relevant bracket and fastener failure modes. The lowest applicable factor of safety governs the connection design.
+
+<img width="886" height="1220" alt="image" src="https://github.com/user-attachments/assets/a0bac8e2-1358-4831-872c-49480f569de0" />
+
+### Top Frame Structural Analysis
+* The top frame is responsible for supporting the motor mounting locations and transferring the applied forces into the vertical structural supports. Because the motors are mounted at separate locations, the frame must resist both the axial loading associated with the lead screw system and the reaction moments generated during motor operation.
+The selected top frame uses 40 Series T-slot aluminum extrusion manufactured from 6061-T6 aluminum. The extrusion has a nominal profile of 1.575 inches by 1.575 inches and a length of 12 inches.
+The structural analysis evaluates the frame's ability to withstand the applied loads without exceeding the allowable stress or displacement limits.
+
+| **Specification** | **Value** |
+|:---|---:|
+| Extrusion series | 40 Series |
+| Material | 6061-T6 aluminum |
+| Profile width | 1.575 in |
+| Profile height | 1.575 in |
+| Length | 12 in |
+| Slot width | 0.320 in |
+| Slot depth | 0.485 in |
+| Center hole diameter | 0.276 in |
+| Motor/support spacing | 9.62 in |
+
+
+| **Material Property** | **Value** | **Units** |
+|:---|---:|:---|
+| Yield strength | 35,000 | psi |
+| Elastic modulus | 10,000,000 | psi |
+| Poisson's ratio | 0.33 | - |
+
+The final material properties should be checked against the extrusion manufacturer's specifications.
+
+For a required factor of safety of 4, the preliminary allowable stress is:
+
+$$
+\sigma_{allow}=\frac{S_y}{FOS}
+$$
+
+$$
+\sigma_{allow}=\frac{35,000}{4}
+$$
+
+$$
+\boxed{\sigma_{allow}=8,750\text{ psi}}
+$$
+
+This allowable stress provides a preliminary comparison value for evaluating the FEA results.
+
+## Top Frame Finite Element Analysis (FEA)
+* SolidWorks Simulation is used to evaluate the structural performance of the top frame under the expected operating loads. The simulation provides a visual representation of the stress distribution and displacement throughout the extrusion.
+The analysis focuses on determining whether the top frame can withstand the applied axial forces and motor reaction moments without exceeding the allowable stress or deformation limits.
+<img width="1118" height="612" alt="image" src="https://github.com/user-attachments/assets/e840cf05-9701-44fd-ae9a-b1ade36b8efa" />
+<img width="1358" height="782" alt="image" src="https://github.com/user-attachments/assets/831b27d7-fd6a-41b6-8de1-d56270c8c2f2" />
+<img width="1360" height="762" alt="image" src="https://github.com/user-attachments/assets/56cc7b09-9c56-427d-bdf6-264b165ee1ce" />
+
+
+The factor of safety based on the maximum von Mises stress is calculated using:
+
+$$
+FOS=\frac{S_y}{\sigma_{von\ Mises}}
+$$
+
+$$
+FOS=\frac{241.3\text{ MPa}}{\sigma_{von\ Mises}}
+$$
+
+### FEA Results Discussion
+* The von Mises stress plot is used to identify the locations experiencing the highest stress under the applied loading conditions. These locations are important because they indicate potential areas where yielding may occur.
+The displacement plot is used to evaluate how much the top frame deforms under the applied loads. Excessive displacement could affect the alignment of the lead screws and crosshead, potentially reducing the accuracy and functionality of the tensile tester.
+The motor reaction moments are also considered because they may cause twisting or warping of the extrusion. The displacement results should be examined to determine whether the frame experiences significant rotational deformation in addition to bending.
+
+### Design Improvements and Optimization
+* After reviewing the hand calculations and FEA results, potential design improvements are identified to improve the structural performance of the top frame and mounting connections.
+* Possible improvements include:
+* Adjusting the mounting bracket configuration.
+* Increasing bracket thickness or changing the bracket geometry.
+* Reducing the distance between the applied load and the bracket connection where possible.
+* Improving the spacing or arrangement of the frame supports.
+* Adding additional structural support to reduce twisting.
+* Revising the motor mounting arrangement to reduce the moment transferred into the 
+
+
+
 
 
 ### Vertical Frame FEA 
@@ -46,4 +391,4 @@ In addition to the axial loading, the motor mounting arrangement introduces reac
 <img width="848" height="1138" alt="image" src="https://github.com/user-attachments/assets/bf05c468-df9b-4171-a4c8-aa9c95532fa2" />
 
 ## Communicate
-* I spent 5 hours on this assignment. 
+* I spent 10 hours on this assignment. 
